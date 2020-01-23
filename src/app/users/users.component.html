@@ -1,0 +1,19 @@
+<form clrForm [formGroup]="userForm">
+  <span class="clr-sr-only">Tabbing through form inputs will trigger validation messages to be read aloud.</span>
+  <clr-input-container>
+    <label>First name</label>
+    <input clrInput type="text" formControlName="firstName" name="firstName" required />
+    <clr-control-error>We need your first name for legal compliance</clr-control-error>
+  </clr-input-container>
+  <clr-input-container>
+    <label>Middle name</label>
+    <input clrInput type="text" formControlName="middleName" name="middleName" required />
+  </clr-input-container>
+  <clr-input-container>
+    <label>Last name</label>
+    <input clrInput type="text" formControlName="lastName" name="lastName" required />
+    <clr-control-error>We need your last name for legal compliance</clr-control-error>
+  </clr-input-container>
+  <button class="btn btn-primary" type="submit" (click)="submit()">Submit</button>
+  <button class="btn" type="button" (click)="resetForm()">Reset</button>
+</form>

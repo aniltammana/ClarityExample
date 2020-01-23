@@ -1,0 +1,14 @@
+<h1>Clarity Example</h1>
+<button class="btn btn-primary" type="button" (click)="show=!show">Open Modal</button>
+
+<clr-modal [(clrModalOpen)]="show" [clrModalSize]="'xl'" [clrModalClosable]="false">
+  <h3 class="modal-title">Clarity Example</h3>
+  <div class="modal-body">
+      <p>Hello World.</p>
+  </div>
+  <div class="modal-footer">
+      <button type="button" class="btn btn-primary" (click)="show = false">
+         Ok
+      </button>
+  </div>
+</clr-modal>
